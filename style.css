@@ -292,12 +292,12 @@ nav .fa-solid, nav .fa-regular{
     }
     .skill-set{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax( 60px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax( 60px, 90px));
         grid-gap: 30px;
         margin-top: 20px;
     }
     .skill-set div{
-        padding: 18px;
+        padding: 22px;
         background: #262626;
         font-size: 30;
         font-weight: 100;
