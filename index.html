@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Oluwakayode</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b407a31501.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+             <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+             </nav>
+             <div class="header-text">
+                <h1>Hi There 👋, <br>I'm <span>Michael</span> Oluwasegun</h1>
+                <p>A Software Engineer && Front-End Dev.</p>
+             </div>
+        </div>
+    </div>
+<!--------------about me---------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png" alt="user image">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Software Engineering Intern and a Front-End Developer dedicated to improving skills through hands-on learning and development work. Proficient in mobile and desktop developments. Adept at using HTML5, Python, JavaScript and other programming languages to produce clean code. Well-organized and collaborative team player with strong communication and analytical abilities.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <div class="skill-set">
+                        <div>
+                            <i class="fa-brands fa-html5"></i>
+                            <h3>HTML5</h3>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-css3-alt"></i>
+                        <h3>CSS</h3>
+                        </div>
+                        <div>
+                        <i class="fa-brands fa-js"></i>
+                        <h3>JavaScript</h3>
+                        </div>
+                        <div>
+                        <i class="fa-brands fa-python"></i>
+                        <h3>Python</h3>
+                        </div>
+                        <div>
+                        <i class="fa-brands fa-git"></i>
+                        <h3>Git</h3>
+                        </div>
+                        <div>
+                        <i class="fa-brands fa-github"></i>
+                        <h3>GitHub</h3>
+                        </div>
+                        <div>
+                        <i class="fa-brands fa-linux"></i>
+                        <h3>Linux</h3>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li>Demonstrated time management, organizational, prioritization and planning skills by successfully handling tasks, projects and priorities.</li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Web </span><br>Designing Web</li>
+                        <li><span>UI/UX</span><br>Designing Web</li>
+                        <li><span>UI/UX</span><br>Designing Web</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------services----------------
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Enim aut laborum dolorum consequatur, doloribus magnam facere amet nihil iste?.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Enim aut laborum dolorum consequatur, doloribus magnam facere amet nihil iste?.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Programming</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Enim aut laborum dolorum consequatur, doloribus magnam facere amet nihil iste?.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+--->
+<!---------------Resume--------------->
+
+
+<!---------------Contact-------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>michaelaykay@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>08120234567</p>
+                <div class=" ">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://facebook.com/"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://facebook.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://facebook.com/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+    
+
+</script>
+</body> 
+</html>
