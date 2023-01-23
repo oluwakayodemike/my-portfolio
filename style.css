@@ -292,12 +292,12 @@ nav .fa-solid, nav .fa-regular{
     }
     .skill-set{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax( 60px, 90px));
-        grid-gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax( 70px, 90px));
+        grid-gap: 7px;
         margin-top: 20px;
     }
     .skill-set div{
-        padding: 22px;
+        padding: 12px;
         background: #262626;
         font-size: 30;
         font-weight: 100;
@@ -324,10 +324,13 @@ nav .fa-solid, nav .fa-regular{
         font-size: 14px;
     }
     .about-col-2 p{
-	font-size: 18px;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 15px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
-
+    .about-col-2 p1{
+        font-size: 17px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
     .tab-links{
         font-size: 16px;
         margin-right: 20px;
