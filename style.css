@@ -95,6 +95,7 @@ nav ul li a:hover::after{
 .about-col-2 p{
     font-size: 22px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
 }
 
 .sub-title{
@@ -170,6 +171,40 @@ nav ul li a:hover::after{
 .skill-set div:hover{
     background: #ff004f;
     transform: translateY(-10px);
+}
+/*-------resume--------*/
+.resume-sub{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+.information p{
+    margin-top: 2px;
+    font-size: 22px;
+    color: rgb(163, 157, 157);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    margin-top: 20px;
+    width: fit-content;
+    border: 1px solid red;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: red;
+}
+.btn.btn2{
+    display: inline-block;
+    background: red;
+}
+.information p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /* ---------services ---------- */
@@ -317,6 +352,7 @@ nav .fa-solid, nav .fa-regular{
     }
     .about-col-2{
         font-size: 14px;
+        text-align: justify;
     }
     .about-col-2 p{
         font-size: 15px;
@@ -330,7 +366,24 @@ nav .fa-solid, nav .fa-regular{
         font-size: 16px;
         margin-right: 20px;
     }
+    .btn.btn2{
+        display: block;
+        background: red;
+    }
+    .information p{
+        text-align: center;
+        text-size-adjust: 15px;
+    }
+    .resume-sub{
+        text-align: center;
+    }
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
+    .resume-sub{
+        font-size: 40px;
+        font-weight: 600;
+        color: white;
+    }
+    
 }
